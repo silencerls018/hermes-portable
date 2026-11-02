@@ -1,0 +1,25 @@
+fetch-use 0.4.0
+
+Author declared by the upstream distribution: Browser-Use.
+License declared by its original METADATA and pyproject.toml: MIT.
+Official package page: https://pypi.org/project/fetch-use/0.4.0/
+
+The exact upstream wheel and source distribution do not include a dedicated
+LICENSE file or a package-specific copyright statement. The repository URL
+declared by upstream, https://github.com/browser-use/fetch-use, returned 404
+when these notices were prepared. No copyright year or copyright holder
+statement has been invented or borrowed from another project.
+
+fetch-use-0.4.0-METADATA.txt and fetch-use-0.4.0-pyproject.txt preserve the
+upstream declarations. MIT-standard-text.txt supplies the standard MIT license
+text from the SPDX License List corresponding to the package's declared MIT
+license. Its <year> and <copyright holders> fields are generic template
+placeholders, not factual assertions about this package.
+
+The exact source distribution is retained separately as fetch_use-0.4.0.tar.gz.
+Its PyPI-published SHA256 is:
+9511987d4907ec6dac501e21d66946d10098f66b5d21bc2aba4189cd81ba189a
+
+The absence of a package-specific upstream license notice remains recorded
+in python-notice-sources.json; this supplemental notice does not claim that
+such a file was present upstream.

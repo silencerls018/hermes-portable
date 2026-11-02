@@ -1,0 +1,166 @@
+{
+  "schema": "dopi-python-supplemental-notices/v1",
+  "generatedAt": "2026-10-30T14:49:31.005Z",
+  "entries": [
+    {
+      "distribution": "davey",
+      "version": "0.1.6",
+      "license": "MIT",
+      "noticeFiles": [
+        {
+          "name": "davey-0.1.6-LICENSE.txt",
+          "size": 1071,
+          "sha256": "90760006b6e6c76a67476de39bee25e42e584679eac5d608765355d5d54e8afa"
+        }
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/Snazzah/davey/a1e2e741bea06bc3b7167a5c3792844b8975993c/LICENSE",
+      "sourceRef": "py-0.1.6",
+      "sourceCommit": "a1e2e741bea06bc3b7167a5c3792844b8975993c",
+      "status": "exact-version-upstream-license"
+    },
+    {
+      "distribution": "firecrawl-anydoc",
+      "version": "0.2.4",
+      "license": "MIT",
+      "noticeFiles": [
+        {
+          "name": "firecrawl-anydoc-0.2.4-LICENSE.txt",
+          "size": 1084,
+          "sha256": "03a9e7657aac6536fb6458bd220347c4e7f85bd0a51d8d9e8528530b7a682ade"
+        }
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/firecrawl/anydoc/42bf1c5ecdde9eb0d96d6bd75a9e6698cf93b14c/LICENSE",
+      "sourceRef": "v0.2.4",
+      "sourceCommit": "42bf1c5ecdde9eb0d96d6bd75a9e6698cf93b14c",
+      "status": "exact-version-upstream-license"
+    },
+    {
+      "distribution": "pywin32",
+      "version": "311",
+      "declaredMetadataLicense": "PSF",
+      "noticeFiles": [
+        {
+          "name": "pywin32-311-LICENSE.txt",
+          "size": 1540,
+          "sha256": "11d8462e134e8efe8f4bd52372292a72ff0b670753d2f49f71675eed0dbfd085"
+        }
+      ],
+      "sourcePath": "venv/Lib/site-packages/win32/license.txt",
+      "sourceUrl": "https://pypi.org/project/pywin32/311/",
+      "status": "copied-unmodified-from-bundled-wheel-outside-dist-info"
+    },
+    {
+      "distribution": "winrt-runtime",
+      "version": "3.2.1",
+      "license": "MIT",
+      "noticeFiles": [
+        {
+          "name": "pywinrt-3.2.1-LICENSE.txt",
+          "size": 1225,
+          "sha256": "6e898069e8b3c6d8d23dc70ac7067cc2b7c9db14c36df873026758db82c0891d"
+        }
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/pywinrt/pywinrt/93d9abe237ca5ced10a839f4aa9bee29b40929b3/LICENSE",
+      "sourceRef": "wheels/v3.2.1+cp314",
+      "sourceCommit": "93d9abe237ca5ced10a839f4aa9bee29b40929b3",
+      "status": "exact-version-upstream-license"
+    },
+    {
+      "distribution": "winrt-Windows.ApplicationModel",
+      "version": "3.2.1",
+      "license": "MIT",
+      "noticeFiles": [
+        {
+          "name": "pywinrt-3.2.1-LICENSE.txt",
+          "size": 1225,
+          "sha256": "6e898069e8b3c6d8d23dc70ac7067cc2b7c9db14c36df873026758db82c0891d"
+        }
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/pywinrt/pywinrt/93d9abe237ca5ced10a839f4aa9bee29b40929b3/LICENSE",
+      "sourceRef": "wheels/v3.2.1+cp314",
+      "sourceCommit": "93d9abe237ca5ced10a839f4aa9bee29b40929b3",
+      "status": "exact-version-upstream-license"
+    },
+    {
+      "distribution": "winrt-Windows.Foundation",
+      "version": "3.2.1",
+      "license": "MIT",
+      "noticeFiles": [
+        {
+          "name": "pywinrt-3.2.1-LICENSE.txt",
+          "size": 1225,
+          "sha256": "6e898069e8b3c6d8d23dc70ac7067cc2b7c9db14c36df873026758db82c0891d"
+        }
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/pywinrt/pywinrt/93d9abe237ca5ced10a839f4aa9bee29b40929b3/LICENSE",
+      "sourceRef": "wheels/v3.2.1+cp314",
+      "sourceCommit": "93d9abe237ca5ced10a839f4aa9bee29b40929b3",
+      "status": "exact-version-upstream-license"
+    },
+    {
+      "distribution": "winrt-Windows.Foundation.Collections",
+      "version": "3.2.1",
+      "license": "MIT",
+      "noticeFiles": [
+        {
+          "name": "pywinrt-3.2.1-LICENSE.txt",
+          "size": 1225,
+          "sha256": "6e898069e8b3c6d8d23dc70ac7067cc2b7c9db14c36df873026758db82c0891d"
+        }
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/pywinrt/pywinrt/93d9abe237ca5ced10a839f4aa9bee29b40929b3/LICENSE",
+      "sourceRef": "wheels/v3.2.1+cp314",
+      "sourceCommit": "93d9abe237ca5ced10a839f4aa9bee29b40929b3",
+      "status": "exact-version-upstream-license"
+    },
+    {
+      "distribution": "winrt-Windows.Services.Store",
+      "version": "3.2.1",
+      "license": "MIT",
+      "noticeFiles": [
+        {
+          "name": "pywinrt-3.2.1-LICENSE.txt",
+          "size": 1225,
+          "sha256": "6e898069e8b3c6d8d23dc70ac7067cc2b7c9db14c36df873026758db82c0891d"
+        }
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/pywinrt/pywinrt/93d9abe237ca5ced10a839f4aa9bee29b40929b3/LICENSE",
+      "sourceRef": "wheels/v3.2.1+cp314",
+      "sourceCommit": "93d9abe237ca5ced10a839f4aa9bee29b40929b3",
+      "status": "exact-version-upstream-license"
+    },
+    {
+      "distribution": "fetch-use",
+      "version": "0.4.0",
+      "license": "MIT",
+      "noticeFiles": [
+        {
+          "name": "fetch-use-0.4.0-NOTICE.txt",
+          "size": 1294,
+          "sha256": "ff11d2de6d5a815e530c3c6534fba863348713793b5f720f7be826cc756c406e"
+        },
+        {
+          "name": "fetch-use-0.4.0-METADATA.txt",
+          "size": 7313,
+          "sha256": "f31b95a067e72b5c9c564ebe3bfb472d2bf3aaa90d9f33e14698fbcb2fcd2dcf"
+        },
+        {
+          "name": "fetch-use-0.4.0-pyproject.txt",
+          "size": 1898,
+          "sha256": "88189ca1836eb9df1af46a02ab369c2d6ab1ccb1c45a112236b9ec0c1a290584"
+        },
+        {
+          "name": "MIT-standard-text.txt",
+          "size": 1078,
+          "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
+        }
+      ],
+      "sourceUrl": "https://files.pythonhosted.org/packages/5d/2d/66784fa8b66a04f170ad8f6598688b30b3a194dad4185b36d53da4ae1505/fetch_use-0.4.0.tar.gz",
+      "sourceSha256": "9511987d4907ec6dac501e21d66946d10098f66b5d21bc2aba4189cd81ba189a",
+      "sourceSize": 8974,
+      "standardLicenseTextUrl": "https://raw.githubusercontent.com/spdx/license-list-data/31846481de7ea17d92f2f46fad76abe58b2e9bb0/text/MIT.txt",
+      "status": "upstream-declaration-plus-standard-MIT-text",
+      "upstreamGap": "The exact wheel/sdist has no dedicated LICENSE or copyright notice; declared repository is unavailable. No attribution was fabricated."
+    }
+  ]
+}

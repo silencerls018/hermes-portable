@@ -1,0 +1,69 @@
+DOPI portable Hermes runtime: third-party material
+
+This distribution adapts the official Nous Research Hermes Agent. The Hermes
+source and its MIT license remain in the hermes-agent directory. DOPI's private
+application source is not part of this independent runtime distribution.
+
+The runtime includes these independently maintained components. The exact
+upstream download URLs and SHA256 values are pinned by pm/lock.json. Preserve
+their existing license, copyright, notice, and package metadata files when
+building or updating the runtime.
+
+  Python 3.14.9, python-build-standalone build 20261021
+    PSF license and bundled component notices: tools/python-*/LICENSE.txt
+    Build source: https://github.com/astral-sh/python-build-standalone
+    Language source: https://github.com/python/cpython
+
+  uv 0.13.5
+    MIT OR Apache-2.0. This directory supplies the license texts omitted from
+    the binary-only Windows archive: uv-LICENSE-MIT.txt, uv-LICENSE-APACHE.txt.
+    Source: https://github.com/astral-sh/uv/tree/0.13.5
+
+  Node.js 26.12.1
+    Node and bundled dependency licenses: tools/node-*/LICENSE
+    Source: https://github.com/nodejs/node/tree/v26.12.1
+
+  npm 12.0.2
+    npm and its bundled dependencies retain their package-local LICENSE files.
+    Source: https://github.com/npm/cli/tree/v12.0.2
+
+  ripgrep 15.2.0
+    Unlicense OR MIT; COPYING, UNLICENSE and LICENSE-MIT remain in tools/ripgrep-*.
+    Source: https://github.com/BurntSushi/ripgrep/tree/15.2.0
+
+  Git for Windows 2.53.0(3), official PortableGit 64-bit distribution
+    Git is GPL-2.0. PortableGit additionally contains Bash, MSYS2 libraries and
+    other separately licensed programs; Git's own source tarball alone does
+    not cover that collection. Preserve root LICENSE.txt, etc/package-versions.txt,
+    usr/share/licenses, mingw64/share/licenses, and component-local notices.
+    Release: https://github.com/git-for-windows/git/releases/tag/v2.53.0.windows.3
+    Build recipes: https://github.com/git-for-windows/MINGW-packages
+                   https://github.com/git-for-windows/MSYS2-packages
+    Additional source mirrors: https://repo.msys2.org/mingw/sources/
+                               https://repo.msys2.org/msys/sources/
+
+  Python application dependencies
+    Package-local dist-info metadata and license files remain in the environment.
+    The generated runtime-notice-inventory.json lists the actual distributions
+    and detected notices. A missing detected license file is a review item,
+    not a conclusion about that distribution's license.
+
+Source material collection
+
+Git/component source archives are prepared as a separate release attachment,
+not placed inside the executable runtime or committed as large Git objects.
+The source-materials.json and source-inspection.json accompanying that attachment
+record exact package-version mappings, official source URLs, local SHA256 values,
+upstream digest verification where available, embedded PKGBUILD/.SRCINFO metadata,
+and unresolved gaps. GCM 2.7.3 has a separate official tagged source archive;
+its MIT license remains at mingw64/doc/git-credential-manager/LICENSE.
+
+These inventories are evidence of collected material. They do not assert that
+all binaries have been reproducibly rebuilt or that every transitive source
+requirement has been independently established. Before public release, retain
+the license texts and publish the completed source attachment beside the binary
+with the same access conditions; review any gaps reported by the inventories.
+
+FFmpeg requires a separate version-specific source and license inventory before
+the final runtime is distributed. Consult the final release inventory for the
+exact FFmpeg build; this notice does not classify it as an optional dependency.

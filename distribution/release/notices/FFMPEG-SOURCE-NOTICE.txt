@@ -1,0 +1,34 @@
+FFmpeg and bundled codec sources for the DOPI portable Hermes runtime
+
+The unmodified official Hermes package-manager pin selects this BtbN binary:
+  ffmpeg-n9.0.1-11-ge47273f4d9-win64-gpl-9.0.zip
+  SHA256 ec9db2cda1f5894ab95446076ad8bf49379db4b53c02e778ad3b49adf91fec83
+  https://github.com/BtbN/FFmpeg-Builds/releases/tag/autobuild-2026-08-31-13-27
+
+This build enables GPL components and version 3. The accompanying GPL text is
+ffmpeg-LICENSE.txt and is also retained beside the original FFmpeg tools.
+FFmpeg source commit: e47273f4d9227152dcbf543cebaf9e2430ddbcc4
+  https://github.com/FFmpeg/FFmpeg/tree/e47273f4d9227152dcbf543cebaf9e2430ddbcc4
+Build recipe commit: 8267213e26c1031621e6e1210fe3aa4867214f6a
+  https://github.com/BtbN/FFmpeg-Builds/tree/8267213e26c1031621e6e1210fe3aa4867214f6a
+
+Separate source material accompanies the runtime release, including the fixed
+FFmpeg tree, dependency source commits and recipe-required submodules, exact
+SVN revisions, rav1e Cargo.lock crate archives, and the identified crosstool-NG
+recipes, GCC sources, and MinGW toolchain sources. The source attachment's
+manifest and SHA256SUMS describe what was collected and any unresolved gaps.
+Source materials must remain available alongside the binary release:
+  https://github.com/silencerls018/hermes-portable/releases
+
+Source collection is not a claim of bit-for-bit binary reproducibility. The
+upstream recipe references a floating base container and performs cargo update
+cc for a rav1e build-only dependency. The original resulting base-image digest
+and updated cc version are not declared by that recipe. These limitations are
+recorded in the source inventories; no replacement versions are represented as
+the original build's versions. The recorded binary buildconf is also supplied.
+
+The source archive is an intentionally broader collection than win64-gpl needs;
+some included recipe sources are disabled in the actual binary buildconf.
+Each included project retains its own license and copyright notices. This
+notice does not replace those terms or assert a blanket license for all
+third-party components.
