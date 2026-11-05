@@ -161,6 +161,22 @@
       "standardLicenseTextUrl": "https://raw.githubusercontent.com/spdx/license-list-data/31846481de7ea17d92f2f46fad76abe58b2e9bb0/text/MIT.txt",
       "status": "upstream-declaration-plus-standard-MIT-text",
       "upstreamGap": "The exact wheel/sdist has no dedicated LICENSE or copyright notice; declared repository is unavailable. No attribution was fabricated."
+    },
+    {
+      "distribution": "davey",
+      "version": "0.1.7",
+      "license": "MIT",
+      "noticeFiles": [
+        {
+          "name": "davey-0.1.7-LICENSE.txt",
+          "size": 1071,
+          "sha256": "90760006b6e6c76a67476de39bee25e42e584679eac5d608765355d5d54e8afa"
+        }
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/Snazzah/davey/73bcec27b7190ce47088c831e0aa72600cc657e7/LICENSE",
+      "sourceRef": "py-0.1.7",
+      "sourceCommit": "73bcec27b7190ce47088c831e0aa72600cc657e7",
+      "status": "exact-version-upstream-license"
     }
   ]
 }
