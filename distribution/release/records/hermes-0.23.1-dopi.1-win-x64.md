@@ -1,8 +1,9 @@
 # Hermes 0.23.1 — Windows x64
 
 This is the only current V7 stable release target, paired with client 0.19.14.
-The artifacts below are frozen. Clean-Windows and final public-client acceptance
-are in progress; the public stable channel has not yet been promoted.
+The sealed runtime passed clean-Windows acceptance. Version-specific attachments
+are ready for public download verification; packaged-client installation must pass
+before the stable channel is promoted.
 
 ## Identity
 
@@ -71,6 +72,11 @@ Chinese/deep paths under a normal Windows user, restart, and a production source
 build of the same fixed commit. That production build passed with an original
 dependency lifecycle directory length of 268 characters, complete dependency
 admission, real management/gateway preflight and unchanged base inventory.
+Both clean-Windows paths passed required tools (including pnpm 12.15.0), empty
+official core drift, MCP stdio, Desktop REST/WebSocket, gateway and CLI checks.
+All 38,421 signed files matched before and after both runs. The relocated run
+followed a real Chinese/spaces directory move and normal machine restart, with
+Windows long paths disabled and a standard-user token.
 Packaged V7 must then install from the public
 stable feed and preserve newly created role/session data after restart. Stable
 and official-latest checks must return no update and keep the active slot.
