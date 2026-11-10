@@ -1,8 +1,8 @@
-# Hermes 0.23.1 — Windows x64 stable candidate
+# Hermes 0.23.1 — Windows x64
 
-This is the only current V7 release target. The earlier 0.23.0 candidate was
-withdrawn before public promotion. Its tests do not count as acceptance of this
-release, and its signing sequence will not be reused.
+This is the only current V7 stable release target, paired with client 0.19.14.
+The artifacts below are frozen. Clean-Windows and final public-client acceptance
+are in progress; the public stable channel has not yet been promoted.
 
 ## Identity
 
@@ -12,81 +12,78 @@ release, and its signing sequence will not be reused.
 | Official upstream commit | `3b421578588243f920886e6fe79a6faa87ea026e` |
 | Official source ZIP SHA-256 | `c3e18ceab5f0c08f9aeb3fea9a0f9a18c93167aed816a451f1bab61a19d0ac21` |
 | Platform | Windows x64 |
-| Minimum V7 client | `0.19.14` |
-| Matching V7 client | `0.19.14` |
+| Minimum and matching V7 client | `0.19.14` |
 | Release sequence | `4` |
 | Publisher key ID | `9039e9cdda2e376e` |
-| Extracted payload | 37,979 files; 1,621,409,354 bytes |
+| Extracted payload | 38,421 files; 1,677,584,856 bytes |
 
-The matching client contains the 0.23.1 gateway and the pnpm workspace update
-adapter. The older 0.19.13 client has not been accepted with this runtime;
-install 0.19.14 first. V8/custom products retain their separate identities and
-controlled runtime policies.
+Install the matching V7 client first. V8 and custom products retain their own
+identities, authorization and controlled runtime policies.
 
 ## Upstream and integration changes
 
 The [official release](https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.1)
-fixes the plugin catalog size limit that caused older versions to fall back to
-their bundled catalog. It also includes gateway group and shared connection
-changes. Not every upstream feature is exposed in the DOPI interface.
+fixes the plugin catalog size limit that caused silent fallback to a bundled
+catalog, and includes gateway group and shared connection changes. Not every
+upstream feature is exposed in the DOPI interface.
 
-The DOPI integration accepts the new native group roster structure, implements
-the existing background `refreshInPlace` contract without changing foreground
-navigation, and uses upstream PM's pinned Node/pnpm tools and frozen workspace
-dependencies. Node 26 was already required by the preceding upstream versions;
-the relevant build migration is npm to pnpm, not a newly introduced Node floor.
-The old npm build path remains supported. A candidate source build no longer
-overwrites the active generated reasoning contract. Stable and official-latest
-checks report no update when the active upstream commit already matches.
+The V7 adapter follows the native group roster and background `refreshInPlace`
+contract, and uses upstream PM's pinned Node/pnpm and frozen workspace workflow.
+Node 26 was already an upstream requirement. On Windows, dependency scripts run
+in an owned physical short checkout to avoid the observed long-working-directory
+process creation failure; only validated desktop output returns to the candidate.
+Candidate reasoning generation and cleanup remain isolated from the active runtime.
 
-## Construction and verification
+The required pnpm 12.15.0 tool and its PM facts are retained in both the sealed
+payload and source-built candidates. After frozen synchronization, actual Python
+dependencies are checked against upstream's override-aware lock before publishing
+official venv state. Candidate admission uses its own Python/bootstrap and requires
+`pm.drift() == {}` with lazy installation disabled. Stable and official-latest
+checks return no update when the installed upstream commit already matches.
 
-The real production source updater built this exact version from a verified
-0.22.7 base, and passed matching gateway/management API preflight and full file
-inventory checks. The original baseline remained unchanged. The stable payload
-uses upstream's contained assembly and reviewed sealed Windows launcher patch.
-
-All 105 installed Python distributions match the frozen upstream lock. The
-official override-aware dependency check passes; raw pip-style checking still
-reports the upstream browser-harness/Pillow override and is not an unqualified
-pip-check pass. Candidate runtime files and mutable user data remain separate.
-
-The V7 installer build and actual ASAR/resource/privacy/media audits passed.
-It is not Windows Authenticode signed. Runtime Ed25519 signing is a separate
-integrity mechanism and must not be described as Authenticode signing.
-
-Final archive identities, clean-Windows results, source materials, anonymous
-downloads and packaged-client update results will be recorded after their gates
-complete. The public stable runtime channel remains 0.22.7 until promotion.
-The separate private CNB client installer feed is not published by this runtime
-release.
-
-## Version-specific artifacts
+## Frozen artifacts
 
 | Attachment | Bytes | SHA-256 |
 | --- | ---: | --- |
-| `Hermes-0.23.1-dopi.1-win-x64.tar.gz` | 607,116,765 | `6f139ee48d59f06444d962fc4ae308cc7997a113fbd62affc542212d78a2baf4` |
-| `release.json` | 8,118,693 | `c45f31376b12bed6acfbba87b0db28996b4337cfc5280c46d994d90bada435af` |
-| `hermes-0.23.1-dopi.1-build-source.tar.gz` | 649,403 | `90290a848038ee02d5cbc913faa6447f4a479ce4a4d186732f919f540d844e40` |
+| `Hermes-0.23.1-dopi.1-win-x64.tar.gz` | 631,807,559 | `1ec3ecfbfb5a7f23123802f04c29c8783278d3cf6bdfe14d8ff01a9f682da8a6` |
+| `release.json` | 8,218,229 | `b541be0be63559d03b440969481740fdcd69485f5636f85187b504005e543845` |
+| `hermes-0.23.1-dopi.1-build-source.tar.gz` | 682,966 | `8c92fb3e1d001a05fb74cc1d18537e8f2491f7adaad1445335cab7dc4856c5a9` |
 
-The signed envelope binds the archive, full extracted file inventory, exact
-upstream commit, sequence and minimum client. Verification uses the public key
-already pinned in the application; a colocated public key is not a trust anchor.
+The signed envelope binds the archive, complete file inventory, exact upstream
+commit, release sequence and minimum client. Verification uses the public key
+already pinned in V7. The actual production extractor, isolated management API,
+required-core check and full inventory before/after startup have passed locally.
+All 105 Python distributions match the frozen selection. Raw pip-style checking
+still reports the upstream browser-harness/Pillow override; the official
+override-aware dependency check passes.
 
-The 53-file source attachment includes integration/overlay source, the reviewed
-launcher patch, frozen upstream dependency and PM lock files, construction
-records and exact upstream source references. Hermes retains MIT licensing and
-the DOPI integration retains its existing AGPL-3.0-only licensing. Build-record
-paths must be configured for another build machine.
+The 57-file source attachment contains the integration and overlay source,
+reviewed launcher patch, exact upstream locks and source references, assembly
+helpers, required-tool checks and supplemental notices. Hermes retains MIT and
+the DOPI integration retains AGPL-3.0-only licensing. Build-record paths must be
+configured for another machine. The pnpm packages include their notices; the
+supplement covers all 22 package manifests, including BlueOak license links.
 
-All seven inherited tool directories match the verified 0.22.7 baseline byte
-for byte. pnpm 12.15.0 is used during the build in isolated scratch and is not
-added to the stable runtime payload. No dependency notice material is missing
-from the inventory, and the payload and source-material privacy scans report
-no issues. This is a notice-material inventory, not a comprehensive legal opinion.
+## Acceptance and scope
+
+Final acceptance is scoped to Hermes 0.23.1: clean installation, original and
+Chinese/deep paths under a normal Windows user, restart, and a production source
+build of the same fixed commit. That production build passed with an original
+dependency lifecycle directory length of 268 characters, complete dependency
+admission, real management/gateway preflight and unchanged base inventory.
+Packaged V7 must then install from the public
+stable feed and preserve newly created role/session data after restart. Stable
+and official-latest checks must return no update and keep the active slot.
+No previous-version migration matrix is part of this release.
+
+The actual V7 ASAR, extra resources, privacy, target media binaries and installer
+feed metadata passed packaging checks. The installer is not Authenticode signed;
+runtime Ed25519 integrity is a separate mechanism. No paid model calls or live
+user project changes are part of acceptance. The separate private CNB client
+installer feed is not published by this runtime release.
 
 Git and FFmpeg corresponding-source attachments remain available in the
-[0.22.5 tool-source release](https://github.com/silencerls018/hermes-portable/releases/tag/hermes-0.22.5-dopi.1-win-x64):
+[tool-source release](https://github.com/silencerls018/hermes-portable/releases/tag/hermes-0.22.5-dopi.1-win-x64):
 
 | Attachment | Bytes | SHA-256 |
 | --- | ---: | --- |
