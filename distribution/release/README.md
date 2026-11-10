@@ -7,11 +7,11 @@ the runtime. The DOPI application source is maintained separately.
 
 ## Current release record
 
-[`hermes-0.23.0-dopi.1-win-x64`](records/hermes-0.23.0-dopi.1-win-x64.md)
-records the prepared Hermes 0.23.0 V7 package, immutable artifact hashes and remaining
-acceptance steps. Minimum V7 client: 0.19.13; matching client: 0.19.14.
-The GitHub release is currently a draft. Preparing or uploading a draft does not promote
-the public stable/latest runtime channel or the separate DOPI client installer channel.
+The only current target is `hermes-0.23.1-dopi.1-win-x64`, matching V7 client 0.19.14.
+It is still under acceptance testing. The earlier
+[0.23.0 candidate](records/hermes-0.23.0-dopi.1-win-x64.md) was cancelled and its draft
+deleted; no public channel was promoted to it. Preparing or uploading a draft does not
+promote the runtime channel or the separate DOPI client installer channel.
 
 The historical 0.22.5 builder and 0.22.7 license material remain in this repository.
 Version-specific source attachments and release records identify later assembly inputs;

@@ -1,9 +1,10 @@
-# Hermes 0.23.0 — DOPI V7 Windows x64
+# Hermes 0.23.0 — withdrawn candidate
 
-Prepared on 2026-11-10. The [version Release](https://github.com/silencerls018/hermes-portable/releases/tag/hermes-0.23.0-dopi.1-win-x64)
-is a draft with its three version-specific attachments uploaded. Final Windows VM acceptance,
-public download verification and runtime channel promotion are pending; this record does not
-claim they have passed.
+Cancelled on 2026-11-10 at the maintainer's request in favor of Hermes 0.23.1.
+The GitHub draft and its three attachments were withdrawn. The CNB staged uploads were
+never confirmed, and neither public runtime channel was promoted. The details below are
+historical candidate evidence only; they are not a distributable release and do not count
+as acceptance of 0.23.1. Release sequence 3 will not be reused.
 
 ## Identity and compatibility
 

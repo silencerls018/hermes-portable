@@ -4,19 +4,18 @@ This branch builds a pinned Hermes runtime for DOPI. It contains no DOPI applica
 user profiles, credentials, activation data or publisher keys. Upstream Hermes remains the
 owner of dependency management, the contained payload format and relative Windows launchers.
 
-## Current prepared release: Hermes 0.23.0 for V7
+## Current release target: Hermes 0.23.1 for V7
 
-The prepared Windows x64 release is `hermes-0.23.0-dopi.1-win-x64`, based on
-upstream commit `2bd378ed1b8d6bf2192cb26e0a55ff3091e6bd19`. It requires V7 client
-0.19.13 or later; the matching client build is 0.19.14. V8 and custom licensed
-runtime distributions are outside this release's scope.
+The Windows x64 target is `hermes-0.23.1-dopi.1-win-x64`, based on upstream commit
+`3b421578588243f920886e6fe79a6faa87ea026e`. The matching client build is 0.19.14.
+Acceptance and publication are still pending. V8 and custom licensed runtime
+distributions are outside this release's scope.
 
-Use the [0.23.0 release record](../release/records/hermes-0.23.0-dopi.1-win-x64.md)
-for the runtime archive, signed envelope, integration-source archive and acceptance status.
-The source attachment contains the exact upstream archive reference and hash, frozen
-dependencies, reviewed patches and matching desktop integration inputs. The repository's
-historical builder below still pins 0.22.5; it was not silently retargeted by the 0.23.0
-documentation update and is not a one-command reproduction of the new release.
+The earlier [0.23.0 candidate](../release/records/hermes-0.23.0-dopi.1-win-x64.md)
+was cancelled and its draft deleted before promotion. It is not an installable release.
+The historical builder below still pins 0.22.5; it is not a one-command reproduction
+of later releases. Their exact upstream source, frozen dependency inputs, patches and
+integration materials are distributed as version-specific source attachments.
 
 ## Historical 0.22.5 builder
 
