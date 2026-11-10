@@ -1,9 +1,9 @@
 # Hermes 0.23.1 — Windows x64
 
 This is the only current V7 stable release target, paired with client 0.19.14.
-The sealed runtime passed clean-Windows acceptance. Version-specific attachments
-are ready for public download verification; packaged-client installation must pass
-before the stable channel is promoted.
+The sealed runtime passed clean-Windows acceptance and anonymous full-download
+verification on GitHub and CNB. Both stable channels now point to this release.
+Final packaged-client installation, restart and update checks passed.
 
 ## Identity
 
@@ -77,9 +77,13 @@ official core drift, MCP stdio, Desktop REST/WebSocket, gateway and CLI checks.
 All 38,421 signed files matched before and after both runs. The relocated run
 followed a real Chinese/spaces directory move and normal machine restart, with
 Windows long paths disabled and a standard-user token.
-Packaged V7 must then install from the public
-stable feed and preserve newly created role/session data after restart. Stable
-and official-latest checks must return no update and keep the active slot.
+Packaged V7 installed this signed runtime from the public stable feed, passed its
+real management API and own-bootstrap core checks, and preserved newly created
+role/session data after restart. Stable and official-latest checks after installation
+and restart all returned no update, kept the active slot and started no source build.
+Fresh installation follows the actual stable feed; the fixed bootstrap pin does
+not replace public-channel acceptance. Both runtime mirrors and both source
+attachments were downloaded anonymously and matched the frozen hashes above.
 No previous-version migration matrix is part of this release.
 
 The actual V7 ASAR, extra resources, privacy, target media binaries and installer

@@ -8,12 +8,13 @@ the runtime. The DOPI application source is maintained separately.
 ## Current release record
 
 The only current target is `hermes-0.23.1-dopi.1-win-x64`, matching V7 client 0.19.14.
-It is still under acceptance testing. The earlier
+Its runtime passed clean-Windows and anonymous download verification and is published
+on both stable channels. Final packaged-client acceptance passed. The earlier
 [0.23.0 candidate](records/hermes-0.23.0-dopi.1-win-x64.md) was cancelled and its draft
 deleted; no public channel was promoted to it. Preparing or uploading a draft does not
 promote the runtime channel or the separate DOPI client installer channel.
 
-The historical 0.22.5 builder and 0.22.7 license material remain in this repository.
+The historical builder and inherited tool license material remain in this repository.
 Version-specific source attachments and release records identify later assembly inputs;
 do not infer a released payload's upstream version from the retained builder defaults.
 

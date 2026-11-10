@@ -8,7 +8,9 @@ owner of dependency management, the contained payload format and relative Window
 
 The Windows x64 target is `hermes-0.23.1-dopi.1-win-x64`, based on upstream commit
 `3b421578588243f920886e6fe79a6faa87ea026e`. The matching client build is 0.19.14.
-Acceptance and publication are still pending. V8 and custom licensed runtime
+The runtime passed clean-Windows acceptance and anonymous full-download verification,
+and is published on both stable channels. Final packaged-client fresh installation,
+restart and same-SHA update checks passed. V8 and custom licensed runtime
 distributions are outside this release's scope.
 
 The earlier [0.23.0 candidate](../release/records/hermes-0.23.0-dopi.1-win-x64.md)

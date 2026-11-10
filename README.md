@@ -2,9 +2,9 @@
 > source and adds a pinned Windows runtime build. Ready-to-run archives are
 > distributed through [Releases](https://github.com/silencerls018/hermes-portable/releases).
 > The only current V7 release target is **Hermes 0.23.1 / DOPI runtime revision 1**,
-> for Windows x64, with matching client **0.19.14**. It is under acceptance testing.
+> for Windows x64, with matching client **0.19.14**. The runtime is published on
+> both stable channels, with final packaged-client acceptance passed.
 > The 0.23.0 candidate was cancelled and its draft withdrawn before public promotion.
-> The published stable channel remains 0.22.7 until the new release passes its gates.
 > V8/custom distributions remain separate.
 > See [the portable build guide](distribution/dopi/README.md) and
 > [release verification](distribution/release/README.md). DOPI application source,
