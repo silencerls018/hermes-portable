@@ -1,6 +1,11 @@
 > **DOPI portable distribution branch.** This repository preserves upstream Hermes
 > source and adds a pinned Windows runtime build. Ready-to-run archives are
 > distributed through [Releases](https://github.com/silencerls018/hermes-portable/releases).
+> The current prepared V7 release is **Hermes 0.23.0 / DOPI runtime revision 1**,
+> for Windows x64, with minimum V7 client **0.19.13** and matching client **0.19.14**.
+> Its [release record](distribution/release/records/hermes-0.23.0-dopi.1-win-x64.md)
+> identifies the exact source and archive hashes. It remains a draft pending final
+> Windows VM and public-channel acceptance; V8/custom distributions remain separate.
 > See [the portable build guide](distribution/dopi/README.md) and
 > [release verification](distribution/release/README.md). DOPI application source,
 > accounts, user data and publisher private keys are not included.

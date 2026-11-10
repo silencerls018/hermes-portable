@@ -4,7 +4,23 @@ This branch builds a pinned Hermes runtime for DOPI. It contains no DOPI applica
 user profiles, credentials, activation data or publisher keys. Upstream Hermes remains the
 owner of dependency management, the contained payload format and relative Windows launchers.
 
-Build with an existing host Python 3.14 and Git (these are build-machine requirements only):
+## Current prepared release: Hermes 0.23.0 for V7
+
+The prepared Windows x64 release is `hermes-0.23.0-dopi.1-win-x64`, based on
+upstream commit `2bd378ed1b8d6bf2192cb26e0a55ff3091e6bd19`. It requires V7 client
+0.19.13 or later; the matching client build is 0.19.14. V8 and custom licensed
+runtime distributions are outside this release's scope.
+
+Use the [0.23.0 release record](../release/records/hermes-0.23.0-dopi.1-win-x64.md)
+for the runtime archive, signed envelope, integration-source archive and acceptance status.
+The source attachment contains the exact upstream archive reference and hash, frozen
+dependencies, reviewed patches and matching desktop integration inputs. The repository's
+historical builder below still pins 0.22.5; it was not silently retargeted by the 0.23.0
+documentation update and is not a one-command reproduction of the new release.
+
+## Historical 0.22.5 builder
+
+The retained builder uses an existing host Python 3.14 and Git (build-machine requirements only):
 
 ```powershell
 git fetch --depth=1 https://github.com/NousResearch/hermes-agent.git bf0203a794a07aac3ff764972ab9087baa4e4f4e

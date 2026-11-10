@@ -5,6 +5,20 @@ It does not package a maintainer's Python environment, Hermes home, DOPI project
 account, API key, or signing key. Upstream Hermes and dependency notices remain in
 the runtime. The DOPI application source is maintained separately.
 
+## Current release record
+
+[`hermes-0.23.0-dopi.1-win-x64`](records/hermes-0.23.0-dopi.1-win-x64.md)
+records the prepared Hermes 0.23.0 V7 package, immutable artifact hashes and remaining
+acceptance steps. Minimum V7 client: 0.19.13; matching client: 0.19.14.
+The GitHub release is currently a draft. Preparing or uploading a draft does not promote
+the public stable/latest runtime channel or the separate DOPI client installer channel.
+
+The historical 0.22.5 builder and 0.22.7 license material remain in this repository.
+Version-specific source attachments and release records identify later assembly inputs;
+do not infer a released payload's upstream version from the retained builder defaults.
+
+## Release procedure
+
 Release order:
 
 1. Build the pinned runtime with the official Hermes PM and assembly interfaces.
